@@ -12,8 +12,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
     <div className="followContainer">
       <CardMini isFollowing userName="Leandro Chazarreta" userNick="Chazmann" />
-      <CardMini isFollowing userName="Miguel Duran" userNick="midudev" />
-      <CardMini isFollowing={false} userName="Peralta Ramos" userNick="pheralb" />
+      <CardMini isFollowing userName="Verónica Moreno Flores" userNick="veromoreno" />
+      <CardMini isFollowing={false} userName="Alan Buscaglia " userNick="Gentleman-Programming" />
     </div>
     <div className="buttonContainer">
       <Boton text={lista[0]} />
