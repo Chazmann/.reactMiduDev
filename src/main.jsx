@@ -9,12 +9,16 @@ const lista = [
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+
     <div className="followContainer">
-      <CardMini userName="Leandro Chazarreta" userNick="Chazmann" />
-      <CardMini userName="Miguel Duran" userNick="midudev" />
-      <CardMini userName="Peralta Ramos" userNick="pheralb" />
+      <CardMini isFollowing userName="Leandro Chazarreta" userNick="Chazmann" />
+      <CardMini isFollowing userName="Miguel Duran" userNick="midudev" />
+      <CardMini isFollowing={false} userName="Peralta Ramos" userNick="pheralb" />
     </div>
-    <Boton text={lista[0]} />
-    <Boton text={lista[1]} />
+    <div className="buttonContainer">
+      <Boton text={lista[0]} />
+      <Boton text={lista[2]} />
+    </div>
+
   </React.StrictMode>,
 )
