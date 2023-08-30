@@ -2,9 +2,18 @@ import './cardmini.css'
 import { useState } from 'react'
 
 
-export const CardMini = ({userName, userNick, isFollowing}) => {
+export const CardMiniconuseState = ({userName, userNick}) => {
+   const [isFollowing, setIsFollowing] = useState(false)
+
+    //==> es igual a ==>
+
+    // const state = useState(false)
+    // const isFollowing = state[0]
+    // const setIsFollowing = state[1]
+const handleClick = () =>{
+    setIsFollowing(!isFollowing)
+}
    
-   console.log(isFollowing)
    const textBoton = isFollowing ? 'Siguiendo' : 'Seguir'
     return (
         <>
@@ -17,7 +26,7 @@ export const CardMini = ({userName, userNick, isFollowing}) => {
                         <span>{userNick}</span>
                     </div>
                 </header>
-                <aside><button className="follow">{textBoton}</button></aside>
+                <aside><button className="follow" onClick={handleClick}>{textBoton}</button></aside>
             </article>
         </>
     )
