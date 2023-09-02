@@ -8,8 +8,9 @@ export const FollowContainer = () => {
         <div className='fContainer'>
             <div className="followContainer">
                 <CardMiniconuseState isFollowing userName="Leandro Chazarreta" userNick="Chazmann" />
+                <CardMiniconuseState isFollowing userName="Juana Gomez" userNick="juanagomez" />
                 <CardMiniconuseState isFollowing userName="Verónica Moreno Flores" userNick="veromoreno" />
-                <CardMiniconuseState isFollowing={false} userName="Alan Buscaglia " userNick="Gentleman-Programming" />
+                <CardMiniconuseState isFollowing={true} userName="Alan Buscaglia " userNick="Gentleman-Programming" />
             </div>
             <div className="buttonContainer">
                 <Boton text={lista[1]} />
