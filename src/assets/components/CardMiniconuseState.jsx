@@ -1,8 +1,7 @@
 import './cardmini.css'
 import { useState } from 'react'
-
-export const CardMiniconuseState = ({ userName, userNick }) => {
-    const [isFollowing, setIsFollowing] = useState(false)
+export const CardMiniconuseState = ({ userName, userNick, initialIsFollowing}) => {
+    const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
 
     //==> es igual a ==>
 

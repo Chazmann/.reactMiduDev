@@ -12,15 +12,15 @@ export const FollowContainer = () => {
                     </div>
            
             <div className="followContainer">
-                <CardMiniconuseState isFollowing userName="Leandro Chazarreta" userNick="Chazmann" />
-                <CardMiniconuseState isFollowing userName="Juana Gomez" userNick="juanagomez" />
-                <CardMiniconuseState isFollowing userName="Verónica Moreno Flores" userNick="veromoreno" />
-                <CardMiniconuseState isFollowing={true} userName="Alan Buscaglia " userNick="Gentleman-Programming" />
+                <CardMiniconuseState initialIsFollowing={true} userName="Leandro Chazarreta" userNick="Chazmann" />
+                <CardMiniconuseState initialIsFollowing={false} userName="Juana Gomez" userNick="juanagomez" />
+                <CardMiniconuseState initialIsFollowing={false} userName="Verónica Moreno Flores" userNick="veromoreno" />
+                <CardMiniconuseState initialIsFollowing={true} userName="Alan Buscaglia " userNick="Gentleman-Programming" />
             </div>
             <div className="buttonContainer">
+                <Boton text={lista[0]} />
                 <Boton text={lista[1]} />
-                <Boton text={lista[1]} />
-                <Boton text={lista[1]} />
+                <Boton text={lista[2]} />
             </div>
 
         </div>
