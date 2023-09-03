@@ -6,6 +6,11 @@ export const FollowContainer = () => {
         "Confirmar", "Cancelar", "Fiumba"]
     return (
         <div className='fContainer'>
+            <div className='algo flex'>
+                <i className='material-icons-outlined'>group_add</i>
+                  <h3>A quién seguir</h3>
+                    </div>
+           
             <div className="followContainer">
                 <CardMiniconuseState isFollowing userName="Leandro Chazarreta" userNick="Chazmann" />
                 <CardMiniconuseState isFollowing userName="Juana Gomez" userNick="juanagomez" />
