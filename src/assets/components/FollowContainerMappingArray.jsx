@@ -6,6 +6,10 @@ const usuarios = [{
     userNick: 'Chazmann',
     isFollowing: true
 }, {
+    userName: 'Sabrina Nazarre',
+    userNick: 'sabrinanazarre',
+    isFollowing: true
+}, {
     userName: 'Juana Gomez',
     userNick: 'juanagomez',
     isFollowing: true

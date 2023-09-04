@@ -1,5 +1,6 @@
 :root {
   box-sizing: border-box;
+  margin: 0;
   padding: 0;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -26,11 +27,14 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 340px;
-  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 98vw;
+  margin: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  
 }
 
 h1 {
@@ -77,6 +81,7 @@ button:focus-visible {
   gap: 4px;
   margin: auto;
  width: 100%!important;
+ 
 }
 .buttonContainer{
   margin: auto;
@@ -87,23 +92,35 @@ button:focus-visible {
 }
 
 .fContainer{
-  width: 100%; 
+  width: 100%!important; 
+  box-sizing: border-box;
+  margin: auto;
   display: flex; 
   flex-direction: column;
   background-color: #272c30;
-  padding: 10px;
+  padding: 14px;
   border-radius: 20px;
   gap: 10px;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9!important;
+    color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: rgba(9, 9, 9, 0.87);
+  background-color: #dee396;
+  }
+  .fContainer{
+    background-color: white;
+    color: black;
+  }
+  button, strong, span{
+    background-color:white;
+    color: #1a1a1a;
+  }
+}
+

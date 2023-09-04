@@ -8,8 +8,8 @@ import { FollowContainerMap } from './assets/components/FollowContainerMappingAr
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <FollowContainer />
-    <br />
+    {/* <FollowContainer />
+    <br /> */}
     <FollowContainerMap />
   </React.StrictMode>,
 )
